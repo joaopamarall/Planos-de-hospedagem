@@ -22,10 +22,15 @@ const routes = [
     component: () => import('../views/PlanoSelecionado.vue')
   },
   {
-    path: '/LoginViewV2',
-    name: 'LoginV2',
-    component: () => import('../views/LoginViewV2.vue')
+    path: '/LogadoView',
+    name: 'Logado',
+    component: () => import('../views/LogadoView.vue')
   },
+  // {
+  //   path: '/LoginViewV2',
+  //   name: 'LoginV2',
+  //   component: () => import('../views/LoginViewV2.vue')
+  // },
 ];
 
 const router = new VueRouter({

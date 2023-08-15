@@ -35,7 +35,7 @@ export default {
         })
         .then((res) => {
           console.log("Esta é uma resposta da API", res.data);
-          this.$router.push("/PlanosView");
+          this.$router.push("/LogadoView");
         })
         .catch((error) => {
           console.log("Não consegui fazer login, deu agum erro na API", error);
