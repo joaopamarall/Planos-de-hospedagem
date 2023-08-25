@@ -1,14 +1,16 @@
 <template>
     <div class="planos">
-        <div class="planos-title">
-            <h1>Você está muito próximo de mudar a forma de</h1>
-            <h1><u class="sublinhado-personalizado">hospedar seu site</u></h1>
-        </div>
-        <div class="planos-paragrafo1">
-            Escolha seu plano
-        </div>
-        <div class="planos-paragrafo2">
-            MAIS USADO
+        <div class="before-escolher-plano">
+            <div class="planos-title">
+                <h1>Você está muito próximo de mudar a forma de</h1>
+                <h1><u class="sublinhado-personalizado">hospedar seu site</u></h1>
+            </div>
+            <div class="planos-title2">
+                Escolha seu plano
+            </div>
+            <div class="planos-mais-usado">
+                MAIS USADO
+            </div>
         </div>
         <div class="escolher-plano">
             <div class="escolher-plano1">
@@ -18,12 +20,12 @@
                     <div>você não paga nada para usar</div>
                     <div>sem taxa de setup</div>
                     <hr>
-                    <div>Ideal para quem está começando.</div>
+                    <div class="escolher-plano-text">Ideal para quem está começando.</div>
                     <hr>
                     <button class="escolher-plano-button">ESCOLHER ESSE PLANO</button>
                 </div>
-                <h4>Seu site em servidores <u>no Estados Unidos.</u></h4>
-                <ul>
+                <ul class="lista-conteudo">
+                    <h4>Seu site em servidores <u>no Estados Unidos.</u></h4>
                     <li>Servidores em nossos data center americanos;</li>
                     <li>ASP, ASP.NET 2.0/3.0/3.5/ e 4.0/4.5/4.5.1/4.5.2 (medium trust) ou PHP 5.3, 5.4, 5.5, 5.6 e 7.0;</li>
                     <li>1 usuário de FTP para upload ou download;</li>
@@ -35,7 +37,7 @@
                     <li>Drupal;</li>
                     <li>entre outros...</li>
                     <h4> Você ainda tem</h4>
-                    <li>Webmail RoundCube;
+                    <li>Webmail RoundCube;</li>
                     <li>AntiSpam;</li>
                     <li>Painel de gerenciamento de DNS;</li>
                     <li>Painel de controle web;</li>
@@ -51,12 +53,12 @@
                     <div>cobrado mensalmente</div>
                     <div>sem taxa de setup</div>
                     <hr>
-                    <div>Ideal para site com mais mais de 30k de visitas.</div>
+                    <div class="escolher-plano-text">Ideal para site com mais mais de 30k de visitas.</div>
                     <hr>
                     <button class="escolher-plano-button">ESCOLHER ESSE PLANO</button>
                 </div>
-                <h4>Seu site em servidores <u>no Brasil.</u></h4>
-                <ul>
+                <ul class="lista-conteudo">
+                    <h4>Seu site em servidores <u>no Brasil.</u></h4>
                     <li>Servidores em nosso de São Paulo;</li>
                     <li>ASP, ASP.NET 2.0/3.0/3.5/ e 4.0/4.5/4.5.1/4.5.2 (medium trust) ou PHP 5.3, 5.4, 5.5, 5.6 e 7.0;</li>
                     <li>10 usuário de FTP para upload ou download;</li>
@@ -86,12 +88,12 @@
                     <div>cobrado mensalmente</div>
                     <div>sem taxa de setup</div>
                     <hr>
-                    <div>Ideal para site com mais mais de 60k de visitas.</div>
+                    <div class="escolher-plano-text">Ideal para site com mais mais de 60k de visitas.</div>
                     <hr>
                     <button class="escolher-plano-button">ESCOLHER ESSE PLANO</button>
                 </div>
-                <h4>Seu site em servidores <u>no Brasil.</u></h4>
-                <ul>
+                <ul class="lista-conteudo">
+                    <h4>Seu site em servidores <u>no Brasil.</u></h4>
                     <li>Servidores em nosso de São Paulo;</li>
                     <li>ASP, ASP.NET 2.0/3.0/3.5/ e 4.0/4.5/4.5.1/4.5.2 (medium trust) ou PHP 5.3, 5.4, 5.5, 5.6 e 7.0;</li>
                     <li>Ilimitados usuário de FTP para upload ou download;</li>
@@ -138,45 +140,76 @@ color: #F30168;
     justify-content: center;
     align-items: center;
 }
-.planos-title {
+.before-escolher-plano {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.planos-paragrafo2 {
+.planos-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.planos-title2 {
+    margin-block: 16px;
+}
+.planos-mais-usado {
     background-color: rgb(32, 189, 27);
     color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 8px;
-    padding:2px;
-    height: 32px;
-    width: 120px;
+    padding: 2px;
+    height: 50%;
+    width: 17%;
+    margin-bottom: -2%;
+    z-index: 9999;
+}
+.escolher-plano-text {
+    padding-inline: 10%;
+    text-align: center;
 }
 .escolher-plano {
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    justify-content: center;
+    gap: 26px;
     color:#666666;
+    overflow-wrap: break-word;
 }
 .escolher-plano1, .escolher-plano2, .escolher-plano3 {
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
     align-items: center;
+    border-radius: 12px;
+    width: 25%;
+
 }
 .escolher-plano1-part1, .escolher-plano2-part1, .escolher-plano3-part1 {
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
-}
-.escolher-plano2-valor2 {
     display: flex;
-    flex-direction: row;
-    gap: 4px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.lista-conteudo {
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style-type: none;
+}
+.lista-conteudo li{
+    padding-left: 8px;
+    overflow-wrap: break-word;
+    max-width: 300px;
+}
+.lista-conteudo li::before {
+    content: "\2713";
+    margin-right: 5px;
 }
 .capslock {
     font-size: 24px;
@@ -190,15 +223,17 @@ color: #F30168;
     justify-content: center;
     align-items: center;
     border-radius: 8px;
-    padding:2px;
+    padding: 0;
     height: 50px;
     width: 200px;
 }
-h2 {
+h2, .opcao {
     margin: 0;
     color:#F30168;
 }
-.opcao {
-    color: #F30168;;
+hr {
+    width: 80%;
+    color: rgba(196, 196, 196, 0.5);
 }
+
 </style>
