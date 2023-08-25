@@ -17,10 +17,10 @@
                 <div class="escolher-plano1-part1">
                     <h3>Hospedagem 1</h3>
                     <h2>Grátis</h2>
-                    <div>você não paga nada para usar</div>
-                    <div>sem taxa de setup</div>
+                    <div class="escolher-plano-text1">você não paga nada para usar</div>
+                    <div class="escolher-plano-text2">sem taxa de setup</div>
                     <hr>
-                    <div class="escolher-plano-text">Ideal para quem está começando.</div>
+                    <div class="escolher-plano-text3">Ideal para quem está começando.</div>
                     <hr>
                     <button class="escolher-plano-button">ESCOLHER ESSE PLANO</button>
                 </div>
@@ -50,10 +50,10 @@
                 <div class="escolher-plano2-part1">
                     <h3>Hospedagem 2</h3>
                     <div class="opcao">R$<span class=capslock>499</span>/mês</div>
-                    <div>cobrado mensalmente</div>
-                    <div>sem taxa de setup</div>
+                    <div class="escolher-plano-text1">cobrado mensalmente</div>
+                    <div class="escolher-plano-text2">sem taxa de setup</div>
                     <hr>
-                    <div class="escolher-plano-text">Ideal para site com mais mais de 30k de visitas.</div>
+                    <div class="escolher-plano-text3">Ideal para site com mais mais de 30k de visitas.</div>
                     <hr>
                     <button class="escolher-plano-button">ESCOLHER ESSE PLANO</button>
                 </div>
@@ -85,10 +85,10 @@
                 <div class="escolher-plano3-part1">
                     <h3>Hospedagem 3</h3>
                     <div class="opcao">R$<span class=capslock>999</span>/mês</div>
-                    <div>cobrado mensalmente</div>
-                    <div>sem taxa de setup</div>
+                    <div class="escolher-plano-text1">cobrado mensalmente</div>
+                    <div class="escolher-plano-text2">sem taxa de setup</div>
                     <hr>
-                    <div class="escolher-plano-text">Ideal para site com mais mais de 60k de visitas.</div>
+                    <div class="escolher-plano-text3">Ideal para site com mais mais de 60k de visitas.</div>
                     <hr>
                     <button class="escolher-plano-button">ESCOLHER ESSE PLANO</button>
                 </div>
@@ -139,6 +139,7 @@ color: #F30168;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-block: 40px;
 }
 .before-escolher-plano {
     display: flex;
@@ -167,8 +168,14 @@ color: #F30168;
     margin-bottom: -2%;
     z-index: 9999;
 }
-.escolher-plano-text {
-    padding-inline: 10%;
+.escolher-plano-text1 {
+    margin: 16px 0 8px 0;
+}
+.escolher-plano-text2 {
+    margin: 0 0 12px 0;
+}
+.escolher-plano-text3 {
+    padding-inline: 15%;
     text-align: center;
 }
 .escolher-plano {
@@ -204,7 +211,6 @@ color: #F30168;
 }
 .lista-conteudo li{
     padding-left: 8px;
-    overflow-wrap: break-word;
     max-width: 300px;
 }
 .lista-conteudo li::before {
@@ -224,14 +230,19 @@ color: #F30168;
     align-items: center;
     border-radius: 8px;
     padding: 0;
+    margin-block: 8px;
     height: 50px;
     width: 200px;
+}
+h3 {
+    margin: 40px 0 10px 0 ;
 }
 h2, .opcao {
     margin: 0;
     color:#F30168;
 }
 hr {
+    margin-block: 20px;
     width: 80%;
     color: rgba(196, 196, 196, 0.5);
 }
