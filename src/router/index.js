@@ -17,9 +17,19 @@ const routes = [
       import("../views/PlanosView.vue"),
   },
   {
-    path: '/PlanoSelecionado',
-    name: 'PlanoSelecionado',
-    component: () => import('../views/PlanoSelecionado.vue')
+    path: '/PlanoSelecionadoView1',
+    name: 'PlanoSelecionado1',
+    component: () => import('../views/PlanoSelecionadoView1.vue')
+  },
+  {
+    path: '/PlanoSelecionadoView2',
+    name: 'PlanoSelecionado2',
+    component: () => import('../views/PlanoSelecionadoView2.vue')
+  },
+  {
+    path: '/PlanoSelecionadoView3',
+    name: 'PlanoSelecionado3',
+    component: () => import('../views/PlanoSelecionadoView3.vue')
   },
   {
     path: '/LogadoView',
