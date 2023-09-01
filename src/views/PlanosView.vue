@@ -14,7 +14,7 @@
             <div class="escolher-plano1">
                 <div class="escolher-plano1-part1">
                     <h3>Hospedagem 1</h3>
-                    <h2>Grátis</h2>
+                    <div><h2>Grátis</h2></div>
                     <div>você não paga nada para usar</div>
                     <div>sem taxa de setup</div>
                     <hr>
@@ -216,9 +216,13 @@ h2 {
 .opcao {
     color: #F30168;;
 }
+div {
+    margin-block: 16px;
+}
 hr {
     width: 100%;
     color: rgba(196, 196, 196, 0.5);
+    margin-block: 20px;
 }
 
 </style>
