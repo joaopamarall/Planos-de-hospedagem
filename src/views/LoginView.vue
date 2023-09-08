@@ -3,16 +3,16 @@
     <!--<img class="logo" />-->
     <div class="login-card">
       <h1><strong>Entre na sua conta</strong></h1>
-      <p>Para acessar sua conta informe seu usuário e senha</p>
-      <p class="login-card-p1">Username</p>
+      <div>Para acessar sua conta informe seu usuário e senha</div>
+      <div class="login-card-p1">Username</div>
       <input type="text" placeholder="Seu Username" v-model="username" />
-      <p class="login-card-p2">Senha</p>
+      <div class="login-card-p2">Senha</div>
       <input type="password" placeholder="Sua Senha" v-model="senha" />
-      <p class="login-card-p3">Esqueci minha senha</p>
+      <div class="login-card-p3">Esqueci minha senha</div>
       <button class="login-card-button" @click="fazerLogin(username, senha)">FAZER LOGIN</button>
     </div>
     <div class="direcionar-cadastro">
-        <p class="login-card-p4">Ainda não tem conta?</p><router-link to="/PlanosView" class="direcionar-cadastro-link"> Cadastre-se</router-link>
+        <div class="login-card-p4">Ainda não tem conta?</div><router-link to="/PlanosView" class="direcionar-cadastro-link"> Cadastre-se</router-link>
     </div>
   </div>
 </template>
@@ -99,7 +99,7 @@ h4 {
   margin: 0;
   padding: 10px 0 0 0;
 }
-p {
+div {
   margin: 0;
 }
 .login-card-p1, .login-card-p2 {
