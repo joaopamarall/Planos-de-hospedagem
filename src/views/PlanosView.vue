@@ -1,125 +1,26 @@
 <template>
     <div class="planos">
-        <div class="planos-title">
-            <h1>Você está muito próximo de mudar a forma de</h1>
-            <h1><u class="sublinhado-personalizado">hospedar seu site</u></h1>
-        </div>
-        <div class="planos-paragrafo1">
-            Escolha seu plano
-        </div>
-        <div class="planos-paragrafo2">
+        <planos-title-component-vue />
+        <div class="botao-destaque">
             MAIS USADO
         </div>
-        <div class="escolher-plano">
-            <div class="escolher-plano1">
-                <div class="escolher-plano1-part1">
-                    <h3>Hospedagem 1</h3>
-                    <div><h2>Grátis</h2></div>
-                    <div>você não paga nada para usar</div>
-                    <div>sem taxa de setup</div>
-                    <hr>
-                    <div>Ideal para quem está começando.</div>
-                    <hr>
-                    <button class="escolher-plano-button">ESCOLHER ESSE PLANO</button>
-                </div>
-                <ul class="lista-conteudo">
-                    <h4>Seu site em servidores <u>no Estados Unidos.</u></h4>
-                    <li>Servidores em nossos data center americanos;</li>
-                    <li>ASP, ASP.NET 2.0/3.0/3.5/ e 4.0/4.5/4.5.1/4.5.2 (medium trust) ou PHP 5.3, 5.4, 5.5, 5.6 e 7.0;</li>
-                    <li>1 usuário de FTP para upload ou download;</li>
-                    <li>1 contas de e-mails profissionais;</li>
-                    <li>1 subdomínio gratuito;</li>
-                    <h4>Suporte 24 horas, 7 dias por semana grátis;</h4>
-                    <h4>Aplicativos disponíveis;</h4>
-                    <li> Wordpress;</li>
-                    <li>Drupal;</li>
-                    <li>entre outros...</li>
-                    <h4> Você ainda tem</h4>
-                    <li>Webmail RoundCube;</li>
-                    <li>AntiSpam;</li>
-                    <li>Painel de gerenciamento de DNS;</li>
-                    <li>Painel de controle web;</li>
-                    <li>Configurações de PHP personalizáveis;</li>
-                    <li>Certificado SSL Grátis;</li>
-                    <li>Transferência ilimitada.</li>
-                </ul>
-            </div>
-            <div class="escolher-plano2">
-                <div class="escolher-plano2-part1">
-                    <h3>Hospedagem 2</h3>
-                    <div class="opcao">R$<span class=capslock>499</span>/mês</div>
-                    <div>cobrado mensalmente</div>
-                    <div>sem taxa de setup</div>
-                    <hr>
-                    <div>Ideal para site com mais mais de 30k de visitas.</div>
-                    <hr>
-                    <button class="escolher-plano-button">ESCOLHER ESSE PLANO</button>
-                </div>
-                <ul class="lista-conteudo">
-                    <h4>Seu site em servidores <u>no Brasil.</u></h4>
-                    <li>Servidores em nosso de São Paulo;</li>
-                    <li>ASP, ASP.NET 2.0/3.0/3.5/ e 4.0/4.5/4.5.1/4.5.2 (medium trust) ou PHP 5.3, 5.4, 5.5, 5.6 e 7.0;</li>
-                    <li>10 usuário de FTP para upload ou download;</li>
-                    <li>30 contas de e-mails profissionais;</li>
-                    <li>10 bdomínio gratuito;</li>
-                    <h4>Suporte 24 horas, 7 dias por semana grátis;</h4>
-                    <h4>Aplicativos disponíveis;</h4>
-                    <li>Wordpress;</li>
-                    <li>Drupal;</li>
-                    <li>entre outros...</li>
-                    <h4>Migração Gratuita;</h4>
-                    <li>Migramos todos seus sites para nossos servidores;</li>
-                    <h4>Você ainda tem</h4>
-                    <li>Webmail RoundCube;</li>
-                    <li>AntiSpam;</li>
-                    <li>Painel de gerenciamento de DNS;</li>
-                    <li>Painel de controle web;</li>
-                    <li>Configurações de PHP personalizáveis;</li>
-                    <li>Certificado SSL Grátis;</li>
-                    <li>Transferência ilimitada.</li>
-                </ul>
-            </div>
-            <div class="escolher-plano3">
-                <div class="escolher-plano3-part1">
-                    <h3>Hospedagem 3</h3>
-                    <div class="opcao">R$<span class=capslock>999</span>/mês</div>
-                    <div>cobrado mensalmente</div>
-                    <div>sem taxa de setup</div>
-                    <hr>
-                    <div>Ideal para site com mais mais de 60k de visitas.</div>
-                    <hr>
-                    <button class="escolher-plano-button">ESCOLHER ESSE PLANO</button>
-                </div>
-                <ul class="lista-conteudo">
-                    <h4>Seu site em servidores <u>no Brasil.</u></h4>
-                    <li>Servidores em nosso de São Paulo;</li>
-                    <li>ASP, ASP.NET 2.0/3.0/3.5/ e 4.0/4.5/4.5.1/4.5.2 (medium trust) ou PHP 5.3, 5.4, 5.5, 5.6 e 7.0;</li>
-                    <li>Ilimitados usuário de FTP para upload ou download;</li>
-                    <li>Ilimitadas contas de e-mails profissionais;</li>
-                    <li>50 bdomínio gratuito;</li>
-                    <h4>Suporte 24 horas, 7 dias por semana grátis;</h4>
-                    <h4>Aplicativos disponíveis;</h4>
-                    <li>Wordpress;</li>
-                    <li>Drupal;</li>
-                    <li>entre outros...</li>
-                    <h4>Migração Gratuita;</h4>
-                    <li>Migramos todos seus sites para nossos servidores;</li>
-                    <h4>Você ainda tem</h4>
-                    <li>Webmail RoundCube;</li>
-                    <li>AntiSpam;</li>
-                    <li>Painel de gerenciamento de DNS;</li>
-                    <li>Painel de controle web;</li>
-                    <li>Configurações de PHP personalizáveis;</li>
-                    <li>Certificado SSL Grátis;</li>
-                    <li>Transferência ilimitada.</li>
-                </ul>
-            </div>
+        <div class="opcoes-planos">
+            <planos-component-vue tipo="Hospedagem 1" preco="0"/>
+            <planos-component-vue tipo="Hospedagem 2" preco="499" condicao="Cobrado mensalmente" siteMaisVisita="Ideal para site com mais de 30k de visitas." paisServidor="Brasil" />
+            <planos-component-vue tipo="Hospedagem 3" preco="999" condicao="Cobrado mensalmente" siteMaisVisita="Ideal para site com mais de 60k de visitas." paisServidor="Brasil" />
         </div>
     </div>
 </template>
 <script>
+import PlanosTitleComponentVue from '@/components/planos/PlanosTitleComponent.vue';
+import PlanosComponentVue from '@/components/planos/PlanosComponent.vue'
+
 export default {
-    name:'PlanosView',
+    name:'planos-view',
+    components: {
+        PlanosComponentVue,
+        PlanosTitleComponentVue
+    },
     data () {
         return {
             
@@ -129,8 +30,8 @@ export default {
 </script>
 
 <style>
-.sublinhado-personalizado {
-color: #F30168;
+body {
+    background-color: aliceblue;
 }
 .planos {
     display: flex;
@@ -138,13 +39,7 @@ color: #F30168;
     justify-content: center;
     align-items: center;
 }
-.planos-title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.planos-paragrafo2 {
+.botao-destaque {
     background-color: rgb(32, 189, 27);
     color: #ffffff;
     display: flex;
@@ -155,74 +50,9 @@ color: #F30168;
     height: 32px;
     width: 120px;
 }
-.escolher-plano {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 40px;
-    color:#666666;
-    overflow-wrap: break-word;
-}
-.escolher-plano1, .escolher-plano2, .escolher-plano3 {
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-    align-items: center;
-    border-radius: 12px;
-    width: 25%;
-
-}
-.escolher-plano1-part1, .escolher-plano2-part1, .escolher-plano3-part1 {
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
-}
-.lista-conteudo {
-    padding: 20px;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    list-style-type: none;
-}
-.lista-conteudo li{
-    padding-left: 8px;
-}
-.lista-conteudo li::before {
-    content: "\2713";
-    margin-right: 5px;
-}
-.capslock {
-    font-size: 24px;
-    font-weight: bold;
-}
-.escolher-plano-button {
-    background-color: #F30168;
-    border: none;
-    color: #fff;
+.opcoes-planos {
     display: flex;
     justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    padding: 0;
-    height: 50px;
-    width: 200px;
+    gap: 26px;
 }
-h2 {
-    margin: 0;
-    color:#F30168;
-}
-.opcao {
-    color: #F30168;;
-}
-div {
-    margin-block: 16px;
-}
-hr {
-    width: 100%;
-    color: rgba(196, 196, 196, 0.5);
-    margin-block: 20px;
-}
-
 </style>
