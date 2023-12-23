@@ -5,33 +5,37 @@ import LoginView from "../views/LoginView.vue";
 Vue.use(VueRouter);
 
 const routes = [
-  {
-    path: "/",
-    name: "Login",
-    component: LoginView,
-  },
-  {
-    path: "/PlanosView",
-    name: "Planos",
-    component: () =>
-      import("../views/PlanosView.vue"),
-  },
-  {
-    path: '/LogadoView',
-    name: 'Logado',
-    component: () => import('../views/LogadoView.vue')
-  },
-  // {
-  //   path: '/LoginViewV2',
-  //   name: 'LoginV2',
-  //   component: () => import('../views/LoginViewV2.vue')
-  // },
+	{
+		path: "/",
+		name: "Login",
+		component: LoginView,
+	},
+	{
+		path: "/PlanosView",
+		name: "Planos",
+		component: () => import("../views/PlanosView.vue"),
+	},
+	{
+		path: "/LogadoView",
+		name: "Logado",
+		component: () => import("../views/LogadoView.vue"),
+	},
+	{
+		path: "/FirstPlanView",
+		name: "FirstPlan",
+		component: () => import("../views/FirstPlanView.vue"),
+	},
+	// {
+	//   path: '/LoginViewV2',
+	//   name: 'LoginV2',
+	//   component: () => import('../views/LoginViewV2.vue')
+	// },
 ];
 
 const router = new VueRouter({
-  mode: "history",
-  base: process.env.BASE_URL,
-  routes,
+	mode: "history",
+	base: process.env.BASE_URL,
+	routes,
 });
 
 export default router;
